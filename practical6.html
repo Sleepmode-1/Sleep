@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Manipulation Example</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin-top: 50px;
+        }
+
+        .container {
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        p {
+            font-size: 18px;
+            color: black;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+    </style>
+
+    <script>
+
+        function changeContent() {
+
+            // DOM Manipulation
+            document.getElementById("message").innerHTML =
+                "Welcome! The content has been changed using JavaScript DOM.";
+
+            document.getElementById("message").style.color = "green";
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>DOM Manipulation Demo</h1>
+
+        <p id="message">
+            Click the button to change this content.
+        </p>
+
+        <button onclick="changeContent()">
+            Click Me
+        </button>
+
+    </div>
+
+</body>
+
+</html>
