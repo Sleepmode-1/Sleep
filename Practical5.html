@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Validation Form</title>
+
+    <script>
+
+        function validateForm() {
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let age = parseInt(document.getElementById("age").value);
+
+            // Empty field validation
+            if (name == "" || email == "" || isNaN(age)) {
+                alert("All fields are required");
+                return false;
+            }
+
+            // Email validation
+            if (!email.includes("@") || !email.includes(".")) {
+                alert("Invalid Email");
+                return false;
+            }
+
+            // Age validation
+            if (age <= 0) {
+                alert("Invalid Age");
+                return false;
+            }
+
+            alert("Form Submitted Successfully");
+            return true;
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h3>User Registration Form</h3>
+
+        <form onsubmit="return validateForm()">
+
+            <label>Name:</label>
+            <input type="text" id="name" placeholder="Enter your Name...">
+
+            <br><br>
+
+            <label>Email:</label>
+            <input type="text" id="email" placeholder="Enter your Email...">
+
+            <br><br>
+
+            <label>Age:</label>
+            <input type="number" id="age" placeholder="Enter your Age...">
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

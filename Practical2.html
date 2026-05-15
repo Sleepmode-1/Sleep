@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled HTML Webpage</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        img {
+            border: 4px solid black;
+            border-radius: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: blue;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: darkblue;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th {
+            background-color: lightblue;
+            color: black;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        .nested-table {
+            background-color: #e8f0ff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>HTML Webpage with CSS</h1>
+
+    <!-- Image Section -->
+    <h2>Image</h2>
+
+    <img src="C:\Users\joshi\OneDrive\Desktop\wallpaper.jpg"
+         alt="Sample Image">
+
+    <br><br>
+
+    <!-- Hyperlink Section -->
+    <h2>Hyperlink</h2>
+
+    <a href="https://www.wikipedia.org" target="_blank">
+        Visit Wikipedia
+    </a>
+
+    <br><br><br>
+
+    <!-- Nested Table -->
+    <h2>Nested Table Structure</h2>
+
+    <table>
+
+        <tr>
+            <th>Main Table 1</th>
+            <th>Main Table 2</th>
+        </tr>
+
+        <tr>
+            <td>Outer Table Data</td>
+
+            <td>
+
+                <!-- Nested Table -->
+                <table class="nested-table">
+
+                    <tr>
+                        <th>Nested Col 1</th>
+                        <th>Nested Col 2</th>
+                    </tr>
+
+                    <tr>
+                        <td>Data A</td>
+                        <td>Data B</td>
+                    </tr>
+
+                    <tr>
+                        <td>Data C</td>
+                        <td>Data D</td>
+                    </tr>
+
+                </table>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+</html>
